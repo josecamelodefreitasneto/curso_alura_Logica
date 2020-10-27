@@ -1,0 +1,37 @@
+<meta charest="UTF-8"> 
+<script>
+	function pulalinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulalinha();
+	}            //entrada do usuario vai ser
+	
+
+	          //FUNÇÃO prompt---> entrada do usuario vai ser
+	var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+		          //FUNÇÃO parseInt---> converder string para inteiro
+	var empates =parseInt(prompt("Entre com o número de empates."));
+
+	var pontos = (vitorias  * 3 )+ empates;
+
+mostra("Os pontos do seu time são " + pontos);
+
+        // condição "IF"se pontos maior que "numero" imprime essa frase ("Seu time está melhor que o ano passado.")
+        if (pontos > 28){
+
+       	mostra("Seu time está melhor que o ano passado.");
+   }
+
+        // contição se pontos menor "numero"imprime essa frase ("Seu time está pior ano passado.")
+		if (pontos < 28){
+			mostra("Seu time está pior ano passado.");
+		}
+		if (pontos == 28) {
+			mostra("Seu time está iqual o ano passado.");
+}
+            mostra("FIM");
+            
+</script>

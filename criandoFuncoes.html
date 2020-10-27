@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script >  
+     //funçoes sempre indicam uma ação
+     function puloLinha(){
+          document.write("<br>");
+          document.write("<br>");
+            }
+     // o que acantece?
+                  // resultado é = "flavio tem " + (ano-1977) +" anos"
+                  //               "Barney tem " +  (ano-1976) +" anos"
+                  //               "joaquim tem " + (ano-1996)+ " anos"
+     function mostra(resultado){
+          document.write(resultado);
+          // a função pulolinha dentro da mostra
+          puloLinha();
+     }
+     
+     var ano=2021;
+     //toda vez que eu xecultar a função mostra tmb vou execulta a pulolinha dentro da mostra
+     mostra("flavio tem " + (ano-1977) +" anos"),
+     //document.write("flavio tem " + (ano-1977) +" anos");
+     // chamada de função pulolinha
+    
+     mostra("Barney tem " +  (ano-1976) +" anos");
+    //document.write("Barney tem " +  (ano-1976) +" anos")
+     
+     mostra("joaquim tem " + (ano-1996)+ " anos");
+    //document.write("joaquim tem " + (ano-1996)+ " anos");
+</script>

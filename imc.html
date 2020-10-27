@@ -1,0 +1,38 @@
+<meta charest="UTF-8"> 
+<script> 
+
+	function pulalinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function mostra(frase){
+		document.write(frase);
+		pulalinha();
+	}
+	function calculaImc(altura,peso){
+		return peso/(altura*altura);
+		}
+	var nome = prompt("Informe o seu nome : ");
+	var alturaInformada = prompt( nome +"  informe sua altura ; ");
+	var pesoInformada = prompt( nome + "  Informa seu peso : ");
+	var imc = calculaImc(alturaInformada,pesoInformada);
+	//document.write(nome + " o seu IMC é " + imc);
+	mostra(nome + " o seu IMC é " + Math.round(imc));
+	if (imc<18.5) {
+        mostra(" você está abaixo do peso recomendado ");
+	};
+	if (imc>35) {
+		mostra(" vc esta acima do recomendado");
+	};    //pode ser feito assim && signfica é
+	if (imc>=18.5 && imc <=35) {
+		//if (imc<=35) pode ser feito assim tmb
+		 {
+			mostra("seu IMC esta excelente ! ")
+		};
+	};
+   
+//aula IMC
+//Nesta aula vamos retornar ao programa do IMC. Lembrando que a OMS determina que indivíduos com IMC menor que 18.5 estão abaixo da média, com 35 estão acima da média, e entre 18.5 e 35 estão na média aceitável.
+
+</script>
+
